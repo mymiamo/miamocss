@@ -14,5 +14,5 @@ Miamo CSS Library is a modern and lightweight CSS framework. It offers a fast, f
 Quickly include Miamo CSS by adding the following line inside the `<head>` tag:  
 
 ```html
-<link rel="stylesheet" href="https://cdn.miamosite.com/miamo.css">
+<link rel="stylesheet" href="https://css.mymiamo.net/miamo.css">
 ```
