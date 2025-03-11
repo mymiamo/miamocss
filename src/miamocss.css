@@ -1,0 +1,190 @@
+/*!
+ * Bootstrap v1.0.0-alpha0.0.1 (https://css.mymiamo.net)
+ * Copyright 2025 The Miamocss Authors
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+ @import url('https://css.mymiamo.net/miamocss-colors.css');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-sizing: border-box;
+}
+
+ body{
+    background-color: var(--mc-body-color);
+ }
+
+ .container {
+    width: 100%;
+    max-width: var(--mc-container-lg); /* Default container size */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.col {
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-sm {
+    max-width: var(--mc-container-sm);
+}
+
+.container-md {
+    max-width: var(--mc-container-md);
+}
+
+.container-lg {
+    max-width: var(--mc-container-lg);
+}
+
+.container-xl {
+    max-width: var(--mc-container-xl);
+}
+
+.container-xxl {
+    max-width: var(--mc-container-xxl);
+}
+
+
+
+
+
+
+.btn {
+    display: inline-block;
+    padding:  0.400rem 0.375rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    user-select: none; /* Prevent text selection */
+    font-weight: 500;
+    margin: 2px;
+}
+
+.btn-primary {
+    color: var(--mc-light);
+    background-color: var(--mc-primary);
+    border: 1px solid var(--mc-primary);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: var(--mc-light);
+    background-color: var(--mc-primary-bg);
+    border-color: var(--mc-primary-bg);
+    box-shadow: 0 0 0 0.2rem rgba(0, 97, 241, 0.5); /* Focused blue glow */
+}
+
+.btn-success {
+    color: var(--mc-light);
+    background-color: var(--mc-success);
+    border: 1px solid var(--mc-success);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    color: var(--mc-light);
+    background-color: var(--mc-success-bg);
+    border-color: var(--mc-success-bg);
+    box-shadow: 0 0 0 0.2rem rgba(30, 150, 0, 0.5); /* Focused green glow */
+}
+
+.btn-danger {
+    color: var(--mc-light);
+    background-color: var(--mc-danger);
+    border: 1px solid var(--mc-danger);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+    color: var(--mc-light);
+    background-color: var(--mc-danger-bg);
+    border-color: var(--mc-danger-bg);
+    box-shadow: 0 0 0 0.2rem rgba(230, 31, 51, 0.5); /* Focused red glow */
+}
+
+.btn-warning {
+    color: var(--mc-dark);
+    background-color: var(--mc-warning);
+    border: 1px solid var(--mc-warning);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-warning:hover,
+.btn-warning:focus {
+    color: var(--mc-light);
+    background-color: var(--mc-warning-bg);
+    border-color: var(--mc-warning-bg);
+    box-shadow: 0 0 0 0.2rem rgba(255, 196, 0, 0.5); /* Focused yellow glow */
+}
+
+.btn-info {
+    color: var(--mc-light);
+    background-color: var(--mc-info);
+    border: 1px solid var(--mc-info);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-info:hover,
+.btn-info:focus {
+    color: var(--mc-light);
+    background-color: var(--mc-info-bg);
+    border-color: var(--mc-info-bg);
+    box-shadow: 0 0 0 0.2rem rgba(85, 189, 221, 0.5); /* Focused light blue glow */
+}
+
+.btn-light {
+    color: var(--mc-dark);
+    background-color: var(--mc-light);
+    border: 1px solid var(--mc-light);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-light:hover,
+.btn-light:focus {
+    color: var(--mc-dark);
+    background-color: var(--mc-secondary-color);
+    border-color: var(--mc-secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); /* Focused white glow */
+}
+
+.btn-dark {
+    color: var(--mc-light);
+    background-color: var(--mc-dark);
+    border: 1px solid var(--mc-dark);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+    color: var(--mc-light);
+    background-color: var(--mc-dark-bg);
+    border-color: var(--mc-dark-bg);
+    box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5); /* Focused dark glow */
+}
+
+a.btn {
+    display: inline-block;
+    text-decoration: none; /* Remove underline from <a> */
+}
+
+a.btn:focus,
+a.btn:hover {
+    text-decoration: none; /* Keep hover/focus styles consistent */
+}

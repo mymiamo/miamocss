@@ -1,0 +1,153 @@
+@import url(./root.css);
+
+.body-color {
+    color: var(--mc-body-color);
+}
+
+.secondary-color {
+    color: var(--mc-secondary-color);
+}
+
+.primary-color {
+    color: var(--mc-primary);
+}
+
+.success-color {
+    color: var(--mc-success);
+}
+
+.danger-color {
+    color: var(--mc-danger);
+}
+
+.warning-color {
+    color: var(--mc-warning);
+}
+
+.info-color {
+    color: var(--mc-info);
+}
+
+.light-color {
+    color: var(--mc-light);
+}
+
+.dark-color {
+    color: var(--mc-dark);
+}
+
+.red-color {
+    color: var(--mc-red);
+}
+
+.green-color {
+    color: var(--mc-green);
+}
+
+.blue-color {
+    color: var(--mc-blue);
+}
+
+.yellow-color {
+    color: var(--mc-yellow);
+}
+
+.orange-color {
+    color: var(--mc-orange);
+}
+
+.purple-color {
+    color: var(--mc-purple);
+}
+
+.pink-color {
+    color: var(--mc-pink);
+}
+
+.brown-color {
+    color: var(--mc-brown);
+}
+
+.gray-color {
+    color: var(--mc-gray);
+}
+
+.black-color {
+    color: var(--mc-black);
+}
+
+.white-color {
+    color: var(--mc-white);
+}
+
+.primary-bg {
+    background-color: var(--mc-primary);
+}
+
+.success-bg {
+    background-color: var(--mc-success);
+}
+
+.danger-bg {
+    background-color: var(--mc-danger);
+}
+
+.warning-bg {
+    background-color: var(--mc-warning);
+}
+
+.info-bg {
+    background-color: var(--mc-info);
+}
+
+.light-bg {
+    background-color: var(--mc-light);
+}
+
+.dark-bg {
+    background-color: var(--mc-dark);
+}
+
+.red-bg {
+    background-color: var(--mc-red);
+}
+
+.green-bg {
+    background-color: var(--mc-green);
+}
+
+.blue-bg {
+    background-color: var(--mc-blue);
+}
+
+.yellow-bg {
+    background-color: var(--mc-yellow);
+}
+
+.orange-bg {
+    background-color: var(--mc-orange);
+}
+
+.purple-bg {
+    background-color: var(--mc-purple);
+}
+
+.pink-bg {
+    background-color: var(--mc-pink);
+}
+
+.brown-bg {
+    background-color: var(--mc-brown);
+}
+
+.gray-bg {
+    background-color: var(--mc-gray);
+}
+
+.black-bg {
+    background-color: var(--mc-black);
+}
+
+.white-bg {
+    background-color: var(--mc-white);
+}
