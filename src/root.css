@@ -45,6 +45,53 @@
     --mc-container-xl: 1210px;
     --mc-container-xxl: 1405px;
 
+    /* Margin */
+    --mc-margin-1: 4px;
+    --mc-margin-2: 8px;
+    --mc-margin-3: 12px;
+    --mc-margin-4: 16px;
+    --mc-margin-5: 20px;
+    --mc-margin-6: 24px;
+    --mc-margin-7: 32px;
+    --mc-margin-8: 40px;
+
+    /* Padding */
+    --mc-padding-1: 4px;
+    --mc-padding-2: 8px;
+    --mc-padding-3: 12px;
+    --mc-padding-4: 16px;
+    --mc-padding-5: 20px;
+    --mc-padding-6: 24px;
+    --mc-padding-7: 32px;
+    --mc-padding-8: 40px;
+
+    /* Border Radius */
+    --mc-radius-1: 4px;
+    --mc-radius-2: 8px;
+    --mc-radius-3: 12px;
+    --mc-radius-4: 16px;
+    --mc-radius-5: 20px;
+
+    /* Font Size */
+    --mc-font-xs: 12px;
+    --mc-font-sm: 14px;
+    --mc-font-md: 16px;
+    --mc-font-lg: 20px;
+    --mc-font-xl: 24px;
+    --mc-font-xxl: 32px;
+
+    /* Colors */
+    --mc-primary: #007bff;
+    --mc-secondary: #6c757d;
+    --mc-success: #28a745;
+    --mc-danger: #dc3545;
+    --mc-warning: #ffc107;
+    --mc-info: #17a2b8;
+    --mc-light: #f8f9fa;
+    --mc-dark: #343a40;
+
+
+
 
 }
 ::selection{
