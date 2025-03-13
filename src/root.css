@@ -3,7 +3,7 @@
     --mc-body-color: #c8cdd1;
     --mc-secondary-color: rgba(182, 186, 190, 0.75);
     
-    --mc-primary: #0061f1;
+    --mc-primary: #007AFF;
     --mc-primary-bg: #002c6d;
 
     --mc-success: #1e9600;
@@ -37,7 +37,11 @@
     --mc-white: #ffffff;
 
     --mc-selection: rgba(37, 137, 231, 0.466);
+    --mc-white-blur:#70707017;
 
+    /* Glass */
+    --mc-glass:  blur(26px) saturate(26px);
+    
     /* Container */
     --mc-container-sm: 586px;
     --mc-container-md: 778px;
@@ -80,17 +84,7 @@
     --mc-font-xl: 24px;
     --mc-font-xxl: 32px;
 
-    /* Colors */
-    --mc-primary: #007bff;
-    --mc-secondary: #6c757d;
-    --mc-success: #28a745;
-    --mc-danger: #dc3545;
-    --mc-warning: #ffc107;
-    --mc-info: #17a2b8;
-    --mc-light: #f8f9fa;
-    --mc-dark: #343a40;
-
-
+    
 
 
 }
@@ -99,20 +93,20 @@
     color: var(--mc-light);
 }
 
-/* Margin ve Padding */
-.m-1 { margin: 4px; }
-.m-2 { margin: 8px; }
-.m-3 { margin: 12px; }
-.p-1 { padding: 4px; }
-.p-2 { padding: 8px; }
-.p-3 { padding: 12px; }
-
-/* Display */
-.d-flex { display: flex; }
-.d-block { display: block; }
-.d-none { display: none; }
-
-/* Hizalama */
-.text-center { text-align: center; }
-.justify-center { justify-content: center; }
-.align-center { align-items: center; }
+/* Kaydırma çubuğunun özelleştirilmesi */
+::-webkit-scrollbar {
+    width: 3px; /* Scrollbar genişliği */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--mc-body-color) ; /* Kaydırma çubuğunun arka planı */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--mc-dark); /* Kaydırma çubuğunun rengi */
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--mc-dark-bg) ; /* Hover durumunda renk değişimi */
+  }

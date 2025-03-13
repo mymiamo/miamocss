@@ -62,16 +62,53 @@
 .btn {
     display: inline-block;
     padding:  0.400rem 0.375rem;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 0.9rem;
+    font-weight: 500;
     text-align: center;
     text-decoration: none;
-    border-radius: 0.5rem;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     user-select: none; /* Prevent text selection */
-    font-weight: 500;
     margin: 2px;
+    
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 6px;
+}
+
+
+.btn-md {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    border-radius: 8px;
+}
+
+.btn-lg {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 12px;
+}
+
+.btn-xl {
+    padding: 1rem 1.25rem;
+    font-size: 1.125rem;
+    border-radius: 14px;
+}
+
+.btn-xxl {
+    padding: 1.25rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 16px;
+}
+
+.btn-xxxl {
+    padding: 1.5rem 1.75rem;
+    font-size: 1.5rem;
+    border-radius: 18px;
 }
 
 .btn-primary {
@@ -88,7 +125,9 @@
 }
 
 .btn-primary:focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 97, 241, 0.5); /* Focused blue glow */
+    box-shadow: 0 0 15px rgba(0, 97, 241, 0.5); /* Focused blue glow */
+    background-color: var(--mc-primary-bg);
+    border: 1px solid var(--mc-primary-bg) ;
 }
 
 .btn-success {
@@ -105,7 +144,9 @@
 }
 
 .btn-success:focus {
-    box-shadow: 0 0 0 0.2rem rgba(30, 150, 0, 0.5); /* Focused green glow */
+    background-color: var(--mc-success-bg);
+    border: 1px solid var(--mc-success-bg) ;
+    box-shadow: 0 0 15px rgba(30, 150, 0, 0.5); /* Focused green glow */
 }
 
 .btn-danger {
@@ -123,7 +164,9 @@
 }
 
 .btn-danger:focus {
-    box-shadow: 0 0 0 0.2rem rgba(230, 31, 51, 0.5); /* Focused red glow */
+    background-color: var(--mc-danger-bg);
+    border: 1px solid var(--mc-danger) ;
+    box-shadow: 0 0 15px rgba(230, 31, 51, 0.5); /* Focused red glow */
 }
 
 .btn-warning {
@@ -140,7 +183,11 @@
 }
 
 .btn-warning:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 196, 0, 0.5); /* Focused yellow glow */
+    color: var(--mc-light);
+    background-color: var(--mc-warning-bg);
+    border: 1px solid var(--mc-warning-bg) ;
+    box-shadow: 0 0 15px rgba(255, 196, 0, 0.5); /* Focused yellow glow */
+    
 }
 
 .btn-info {
@@ -157,7 +204,9 @@
 }
 
 .btn-info:focus {
-    box-shadow: 0 0 0 0.2rem rgba(85, 189, 221, 0.5); /* Focused light blue glow */
+    box-shadow: 0 0 15px rgba(85, 189, 221, 0.5); /* Focused light blue glow */
+    background-color: var(--mc-info-bg);
+    border: 1px solid var(--mc-info) ;
 }
 
 .btn-light {
@@ -174,7 +223,10 @@
 }
 
 .btn-light:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); /* Focused white glow */
+    box-shadow: 0 0 15px  var(--mc-light-bg); /* Focused white glow */
+    background-color: var(--mc-secondary-color);
+    border: 1px solid var(--mc-secondary-color) ;
+    color: var(--mc-dark);
 }
 
 .btn-dark {
@@ -191,11 +243,16 @@
 }
 
 .btn-dark:focus {
-    box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5); /* Focused dark glow */
+    box-shadow: 0 0 15px rgba(38, 38, 38, 0.5); /* Focused dark glow */
+    background-color: var(--mc-dark-bg);
+    border: 1px solid var(--mc-dark);
 }
 
 .btn-outline-primary {
-     background-color: transparent;
+      background-color: var(--mc-white-blur);
+     backdrop-filter: var(--mc-glass);
+     -webkit-backdrop-filter:  var(--mc-glass);
+     -moz-backdrop-filter: var(--mc-glass);
      border-radius: 20px;
     color: var(--mc-primary);
     border: 2px solid  var(--mc-primary);
@@ -209,7 +266,10 @@
 }
 
 .btn-outline-success {
-     background-color: transparent;
+     background-color: var(--mc-white-blur);
+     backdrop-filter: var(--mc-glass);
+     -webkit-backdrop-filter:  var(--mc-glass);
+     -moz-backdrop-filter: var(--mc-glass);
      border-radius: 20px;
     color: var(--mc-success);
     border: 2px solid  var(--mc-success);
@@ -223,7 +283,10 @@
 }
 
 .btn-outline-danger {
-     background-color: transparent;
+      background-color: var(--mc-white-blur);
+     backdrop-filter: var(--mc-glass);
+     -webkit-backdrop-filter:  var(--mc-glass);
+     -moz-backdrop-filter: var(--mc-glass);
      border-radius: 20px;
     color: var(--mc-danger);
     border: 2px solid  var(--mc-danger);
@@ -237,7 +300,10 @@
 }
 
 .btn-outline-warning {
-     background-color: transparent;
+      background-color: var(--mc-white-blur);
+     backdrop-filter: var(--mc-glass);
+     -webkit-backdrop-filter:  var(--mc-glass);
+     -moz-backdrop-filter: var(--mc-glass);
      border-radius: 20px;
     color: var(--mc-warning);
     border: 2px solid  var(--mc-warning);
@@ -251,7 +317,10 @@
 }
 
 .btn-outline-info {
-     background-color: transparent;
+      background-color: var(--mc-white-blur);
+     backdrop-filter: var(--mc-glass);
+     -webkit-backdrop-filter:  var(--mc-glass);
+     -moz-backdrop-filter: var(--mc-glass);
      border-radius: 20px;
     color: var(--mc-info);
     border: 2px solid  var(--mc-info);
@@ -265,7 +334,10 @@
 }
 
 .btn-outline-light {
-     background-color: transparent;
+      background-color: var(--mc-white-blur);
+     backdrop-filter: var(--mc-glass);
+     -webkit-backdrop-filter:  var(--mc-glass);
+     -moz-backdrop-filter: var(--mc-glass);
      border-radius: 20px;
     color: var(--mc-dark);
     border: 2px solid  var(--mc-light);
@@ -280,7 +352,10 @@
 }
 
 .btn-outline-dark {
-     background-color: transparent;
+      background-color: var(--mc-white-blur);
+     backdrop-filter: var(--mc-glass);
+     -webkit-backdrop-filter:  var(--mc-glass);
+     -moz-backdrop-filter: var(--mc-glass);
      border-radius: 20px;
     color: var(--mc-dark);
     border: 2px solid  var(--mc-dark);
