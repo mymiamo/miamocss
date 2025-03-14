@@ -53,10 +53,7 @@
 .text-light { color: var(--mc-light); }
 .text-dark { color: var(--mc-dark); }
 
-/* Text Alignment Utilities */
-.text-left { text-align: left; }
-.text-center { text-align: center; }
-.text-right { text-align: right; }
+
 
 /* Display Utilities */
 .d-block { display: block; }

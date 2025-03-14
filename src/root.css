@@ -18,7 +18,7 @@
     --mc-info: rgb(85, 189, 221);
     --mc-info-bg: rgb(13, 56, 70);
 
-    --mc-light: #ffffff;
+    --mc-light: #f1f1f1;
     --mc-light-bg: #414141;
 
     --mc-dark: #262626;
@@ -35,8 +35,8 @@
     --mc-gray: #808080;
     --mc-black: #000000;
     --mc-white: #ffffff;
-
-    --mc-selection: rgba(37, 137, 231, 0.466);
+    --mc-link: #007AFF;
+    --mc-selection: #0057b363;
     --mc-white-blur:#70707017;
 
     /* Glass */
@@ -84,29 +84,33 @@
     --mc-font-xl: 24px;
     --mc-font-xxl: 32px;
 
-    
+    --blur-bg: rgba(255, 255, 255, 0.1);
+    --blur-filter:  blur(26px) saturate(26px);
+    --transition-speed: 0.3s;
+    --btn-radius: 14px;
+    --btn-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
 
 }
-::selection{
-    background-color: var(--mc-selection);
-    color: var(--mc-light);
+::selection {
+  background-color: var(--mc-selection);
+  color: var(--mc-light);
 }
 
 /* Kaydırma çubuğunun özelleştirilmesi */
 ::-webkit-scrollbar {
-    width: 3px; /* Scrollbar genişliği */
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: var(--mc-body-color) ; /* Kaydırma çubuğunun arka planı */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: var(--mc-dark); /* Kaydırma çubuğunun rengi */
-    border-radius: 6px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--mc-dark-bg) ; /* Hover durumunda renk değişimi */
-  }
+  width: 3px; /* Scrollbar genişliği */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--mc-body-color); /* Kaydırma çubuğunun arka planı */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mc-dark); /* Kaydırma çubuğunun rengi */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mc-dark-bg); /* Hover durumunda renk değişimi */
+}
