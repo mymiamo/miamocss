@@ -35,55 +35,11 @@ Miamo CSS Library aims to offer a **transparent, sleek, and intuitive** user int
 
 
 # Wiki
-* [How to Install?](https://github.com/mymiamo/miamocss/wiki/How-to-Install%3F)
+The Miamo CSS Library Wiki provides guidance on how to use css.mymiamo.net. If you're looking for usage instructions, visit this wiki.
 
-## Colors
-* [Colors and Their Usage](https://github.com/mymiamo/miamocss/wiki/Colors-and-Their-Usage)
+For open-source contributors, the GitHub Wiki is available to help with the development of the Miamo CSS Library. You can access it here:
 
-## Layout
-* [Containers]() ***SOON***
-* [Grid]() ***SOON***
-* [Columns]() ***SOON***
-* [Utilities]() ***SOON***
+[Insert GitHub Wiki Link Here](https://github.com/mymiamo/miamocss/wiki)
 
-## Forms
-* [SOON]()
 
-## The Main Components
-* [Accordions]() ***SOON***
-* [Alerts]() ***SOON***
-* [Badges]() ***SOON***
-* [Breadcrumb]() ***SOON***
-* [Buttons & Link Buttons]() ***SOON***
-* [Buttons Group]() ***SOON***
-* [Card]() ***SOON***
-* [Carousel]() ***SOON***
-* [Dropdowns]() ***SOON***
-* [List Group]() ***SOON***
-* [Modal]() ***SOON***
-* [Navbar]() ***SOON***
-* [Navs & Tabs]() ***SOON***
-* [Offcanvas]() ***SOON***
-* [Pagination]() ***SOON***
-* [Progress]() ***SOON***
-* [Spinners]() ***SOON***
-* [Toasts]() ***SOON***
-* [Tooltips]() ***SOON***
-
-## Assistants
-* [Margins]() ***SOON***
-* [Paddings]() ***SOON***
-* [Radius]() ***SOON***
-* [Font Sizes]() ***SOON***
-* [Alignments]() ***SOON***
-* [Display]() ***SOON***
-* [Flex Utilities]() ***SOON***
-* [ Width & Height Utilities]() ***SOON***
-* [Overflow]() ***SOON***
-* [Visibility]() ***SOON***
-* [Opacitys]() ***SOON***
-* [Positioning]() ***SOON***
-* [Cursors]() ***SOON***
-* [Box Shadows]() ***SOON***
-* [Letter Spacing]() ***SOON***
-* [Line Height]() ***SOON***
+## Version : Alpha V.0.0.4-alpha
