@@ -42,4 +42,4 @@ For open-source contributors, the GitHub Wiki is available to help with the deve
 [Insert GitHub Wiki Link Here](https://github.com/mymiamo/miamocss/wiki)
 
 
-## Version : Alpha V.0.0.4-alpha
+## Version : Alpha V0.0.4-alpha
