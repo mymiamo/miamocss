@@ -35,11 +35,11 @@ Miamo CSS Library aims to offer a **transparent, sleek, and intuitive** user int
 
 
 # Wiki
-The Miamo CSS Library Wiki provides guidance on how to use css.mymiamo.net. If you're looking for usage instructions, visit this wiki.
+The Miamo CSS Library Wiki provides guidance on how to use [css.mymiamo.net](https://css.mymiamo.net). If you're looking for usage instructions, visit this wiki.
 
 For open-source contributors, the GitHub Wiki is available to help with the development of the Miamo CSS Library. You can access it here:
 
 [Insert GitHub Wiki Link Here](https://github.com/mymiamo/miamocss/wiki)
 
 
-## Version : Alpha V.0.0.4-alpha
+## Version : Alpha V0.0.4-alpha
