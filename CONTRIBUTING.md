@@ -32,5 +32,5 @@ The design should follow a modern, minimalist approach, adhering to the followin
 
 ## Communication
 
-To discuss changes or contribute to the project, feel free to join our [Discord](https://discord.com/) channel.
+To discuss changes or contribute to the project, feel free to join our [Discord](https://discord.gg/TkC2TjbRYD) channel.
 
