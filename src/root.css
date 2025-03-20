@@ -6,6 +6,9 @@
     --mc-primary: #007AFF;
     --mc-primary-bg: #002c6d;
 
+    --mc-secondary: #4b4f55;
+    --mc-secondary-bg:#343a40;
+
     --mc-success: #1e9600;
     --mc-success-bg: #082700;
 
@@ -137,7 +140,7 @@
 --mc-indigo-900: #151a3f;
 
 --mc-selection: #0070f380;
---mc-white-blur: #ffffff20;
+--mc-white-blur: #ffffff2c;
 --mc-dark-blur: #00000030;
 
 
@@ -187,7 +190,6 @@
     --mc-font-xxl: 32px;
 
     --blur-bg: rgba(255, 255, 255, 0.1);
-    --blur-filter:  blur(26px) saturate(26px);
     --transition-speed: 0.3s;
     --btn-radius: 14px;
     --btn-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);

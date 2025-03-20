@@ -1,5 +1,5 @@
 /*!
- * Miamo Css V0.0.5-alpha (https://css.mymiamo.net)
+ * Miamo Css V0.0.6-alpha (https://css.mymiamo.net)
  * Copyright 2025 The Miamocss Authors
  * Licensed under MIT (https://opensource.org/licenses/MIT)
  */
@@ -57,11 +57,11 @@
     cursor: pointer;
     transition: all var(--transition-speed) ease-in-out;
     user-select: none;
-    backdrop-filter: var(--blur-filter);
-    -webkit-backdrop-filter: var(--blur-filter);
+    backdrop-filter: var(--mc-glass);
+    -webkit-backdrop-filter: var(--mc-glass);
     box-shadow: var(--btn-shadow);
     border: none;
-    margin: 5px;
+    margin: 2px;
 }
 
 .btn:hover {
@@ -73,6 +73,13 @@
     outline: none;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
+
+
+a.btn { display: inline-block; text-decoration: none;  padding: 0.4rem 0.9rem; }
+a.btn:focus, a.btn:hover { 
+    text-decoration: none; 
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
 
 /* Button Sizes */
 .btn-sm { padding: 0.5rem 1rem; font-size: 0.85rem; }
@@ -119,7 +126,7 @@
 .btn-dark:hover { background: var(--mc-dark-bg); }
 
 /* Outline Buttons */
-.btn-outline { background: var(--blur-bg); border: 2px solid; color: inherit; }
+.btn-outline { background: var(--mc-white-blur); backdrop-filter: var(--mc-glass); -webkit-backdrop-filter: var(--mc-glass); border: 2px solid; color: inherit; }
 
 .btn-outline-primary { border-color: var(--mc-primary); color: var(--mc-primary); }
 .btn-outline-primary:hover { background: var(--mc-primary); color: var(--mc-light); }
@@ -142,15 +149,13 @@
 .btn-outline-dark { border-color: var(--mc-dark); color: var(--mc-dark); }
 .btn-outline-dark:hover { background: var(--mc-dark); color: var(--mc-light); }
 
-a.btn { display: inline-block; text-decoration: none; }
-a.btn:focus, a.btn:hover { text-decoration: none;  }
-
 .alert {
     position: relative;
     padding: 1rem 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
+    backdrop-filter: var(--mc-glass);
+    -webkit-backdrop-filter: var(--mc-glass);
     font-weight: 500;
     transition: all 0.3s ease;
     display: flex;
@@ -187,3 +192,85 @@ a.btn:focus, a.btn:hover { text-decoration: none;  }
   .alert-info { background: var(--mc-info-bg); border-left: 5px solid var(--mc-info); }
   .alert-light { background: var(--mc-light); border-left: 5px solid var(--mc-white); color: var(--mc-dark); }
   .alert-dark { background: var(--mc-dark);  border-left: 5px solid var(--mc-black); }
+
+  .accordion {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    background: var(--mc-white-blur);
+    border-radius: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px var(--mc-dark-blur);
+    backdrop-filter: var(--mc-glass);
+    -webkit-backdrop-filter: var(--mc-glass);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .accordion-item:hover {
+    transform: translateX(-5px) scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .accordion-header {
+    padding: 15px 20px;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--mc-dark-bg);
+  }
+  .accordion-header::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-item.active .accordion-header::after {
+    transform: rotate(45deg);
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: max-height 0.3s ease;
+    font-size: 0.95em;
+    color: var(--mc-dark);
+    line-height: 1.6;
+  }
+
+  .accordion-item.active .accordion-content {
+    padding: 15px 20px;
+    min-height: min-content;
+    max-height: 500px; 
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 14px;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 8px;
+    background: var(--mc-secondary);
+    backdrop-filter: var(--mc-glass);
+    -webkit-backdrop-filter: var(--mc-glass);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: var(--mc-light);
+    margin: 2px;
+  }
+  .badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+
+  .badge .icon {
+    margin-right: 6px;
+    
+  }
