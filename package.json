@@ -1,0 +1,27 @@
+{
+  "name": "miamo-css",
+  "version": "0.0.6-alpha",
+  "description": "Miamo CSS Library is a modern and lightweight CSS framework. It offers a fast, flexible, and customizable design system to bring a sleek and minimal look to your projects.",
+  "main": "index.js",
+  "scripts": {
+  "build": "postcss src/miamo.css -o dist/miamo.min.css"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mymiamo/miamocss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mymiamo/miamocss/issues"
+  },
+  "homepage": "https://github.com/mymiamo/miamocss#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.0"
+  }
+}
