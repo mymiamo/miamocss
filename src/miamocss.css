@@ -12,7 +12,7 @@
 
  .container {
     width: 100%;
-    max-width: var(--mc-container-xl); /* Default container size */
+    max-width: var(--mc-container-xl); /* defualt container size */
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -141,6 +141,80 @@ a.btn:focus, a.btn:hover {
 
 .btn-outline-dark { border-color: var(--mc-dark); color: var(--mc-dark); }
 .btn-outline-dark:hover { background: var(--mc-dark); color: var(--mc-light); }
+/* Button Group Container */
+.btn-group {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--btn-radius);
+  overflow: hidden;
+  backdrop-filter: var(--mc-glass);
+  -webkit-backdrop-filter: var(--mc-glass);
+  box-shadow: var(--btn-shadow);
+}
+
+/* Button Group Buttons */
+.btn-group .btn {
+  border-radius: 0;
+  margin: 0;
+  border: none;
+  position: relative;
+}
+
+.btn-group .btn + .btn {
+  border-left: 1px solid rgba(255, 255, 255, 0.2); /* Hafif bir çizgi ile ayır */
+}
+
+.btn-group .btn:first-child {
+  border-top-left-radius: var(--btn-radius);
+  border-bottom-left-radius: var(--btn-radius);
+  border-left: none;
+}
+
+.btn-group .btn:last-child {
+  border-top-right-radius: var(--btn-radius);
+  border-bottom-right-radius: var(--btn-radius);
+}
+
+.btn-group .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.btn-group .btn:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Group Vertical */
+.btn-group-vertical {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--btn-radius);
+  overflow: hidden;
+  box-shadow: var(--btn-shadow);
+}
+
+.btn-group-vertical .btn {
+  border-radius: 0;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-group-vertical .btn:first-child {
+  border-top-left-radius: var(--btn-radius);
+  border-top-right-radius: var(--btn-radius);
+  border-top: none;
+}
+
+.btn-group-vertical .btn:last-child {
+  border-bottom-left-radius: var(--btn-radius);
+  border-bottom-right-radius: var(--btn-radius);
+  border-bottom: none;
+}
+
+
 
 .alert {
     position: relative;
@@ -299,4 +373,128 @@ a.btn:focus, a.btn:hover {
   .breadcrumb .active {
     font-weight: 600;
     color: #ddd;
+  }
+  /* card */
+  .card-col-default {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    margin-block: 20px;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 768px) {
+    .card-col-default {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 kart yerleştirir */
+      align-items: center;
+      justify-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-col-default {
+      grid-template-columns: 1fr; /* 1 kart yerleştirir */
+      align-items: center;
+    }
+  }
+  
+
+  .card {
+    
+    background: var(--mc-white-blur);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px var(--mc-dark-blur);
+    backdrop-filter: blur(10px) saturate(180%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-img-top {
+    background: var(--mc-dark-blur);
+    width: 100%;  /* Genişlik %100 olacak */
+    height: 200px; /* Sabit bir yükseklik verebiliriz */
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    object-fit: cover; /* Resmin en iyi şekilde görünmesini sağlar */
+  }
+  
+  
+  /* Kart içeriği */
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--mc-dark);
+    margin-bottom: 12px;
+  }
+  
+  .card-text {
+    font-size: 1em;
+    color: var(--mc-secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .card, .btn {
+    transition: all 0.3s ease;
+  }
+  @media (max-width: 768px) {
+    .card {
+      border-radius: 12px; /* Kartın köşe yuvarlaklıklarını küçültüyoruz */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Gölgeyi daha hafif yapıyoruz */
+    }
+  
+    .card-img-top {
+      height: 180px;  /* Tabletlerde görselin yüksekliği biraz daha küçük olabilir */
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+  
+    .card-body {
+      padding: 15px;  /* İçerik alanını biraz daha küçültüyoruz */
+    }
+  
+    .card-title {
+      font-size: 1.1em; /* Başlık boyutunu küçültüyoruz */
+    }
+  
+    .card-text {
+      font-size: 0.95em; /* Metin boyutunu biraz küçültüyoruz */
+    }
+  }
+  
+  /* Mobil ekranlar (max-width: 480px) */
+  @media (max-width: 480px) {
+    .card {
+      border-radius: 8px; /* Kartın köşe yuvarlaklıklarını daha da küçültüyoruz */
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Gölgeyi daha hafif yapıyoruz */
+    }
+  
+    .card-img-top {
+      height: 160px;  /* Mobilde daha küçük bir yükseklik */
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+  
+    .card-body {
+      padding: 10px;  /* İçerik alanını daha da küçültüyoruz */
+    }
+  
+    .card-title {
+      font-size: 1em; /* Başlık boyutunu küçültüyoruz */
+    }
+  
+    .card-text {
+      font-size: 0.9em; /* Metin boyutunu daha da küçültüyoruz */
+    }
   }

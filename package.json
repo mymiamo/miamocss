@@ -1,6 +1,6 @@
 {
   "name": "miamo-css",
-  "version": "0.0.6-alpha",
+  "version": "0.1.0-alpha",
   "description": "Miamo CSS Library is a modern and lightweight CSS framework. It offers a fast, flexible, and customizable design system to bring a sleek and minimal look to your projects.",
   "main": "index.js",
   "scripts": {

@@ -140,8 +140,8 @@
 --mc-indigo-900: #151a3f;
 
 --mc-selection: #0070f380;
---mc-white-blur: #ffffff2c;
---mc-dark-blur: #00000030;
+--mc-white-blur: rgba(255, 255, 255, 0.173);
+--mc-dark-blur: rgba(0, 0, 0, 0.188);
 
 
     /* Glass */

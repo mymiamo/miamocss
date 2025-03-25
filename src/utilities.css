@@ -2,6 +2,71 @@
 [class^="m-"] { margin: var(--mc-spacing-1); }
 [class^="p-"] { padding: var(--mc-spacing-1); }
 
+.m-1 {
+    margin: var(--mc-margin-1); /* 4px */
+  }
+  
+  .m-2 {
+    margin: var(--mc-margin-2); /* 8px */
+  }
+  
+  .m-3 {
+    margin: var(--mc-margin-3); /* 12px */
+  }
+  
+  .m-4 {
+    margin: var(--mc-margin-4); /* 16px */
+  }
+  
+  .m-5 {
+    margin: var(--mc-margin-5); /* 20px */
+  }
+  
+  .m-6 {
+    margin: var(--mc-margin-6); /* 24px */
+  }
+  
+  .m-7 {
+    margin: var(--mc-margin-7); /* 32px */
+  }
+  
+  .m-8 {
+    margin: var(--mc-margin-8); /* 40px */
+  }
+  
+  /* Padding Değerleri */
+  .p-1 {
+    padding: var(--mc-padding-1); /* 4px */
+  }
+  
+  .p-2 {
+    padding: var(--mc-padding-2); /* 8px */
+  }
+  
+  .p-3 {
+    padding: var(--mc-padding-3); /* 12px */
+  }
+  
+  .p-4 {
+    padding: var(--mc-padding-4); /* 16px */
+  }
+  
+  .p-5 {
+    padding: var(--mc-padding-5); /* 20px */
+  }
+  
+  .p-6 {
+    padding: var(--mc-padding-6); /* 24px */
+  }
+  
+  .p-7 {
+    padding: var(--mc-padding-7); /* 32px */
+  }
+  
+  .p-8 {
+    padding: var(--mc-padding-8); /* 40px */
+  }
+
 .m-auto { margin: auto; }
 .p-auto { padding: auto; }
 
